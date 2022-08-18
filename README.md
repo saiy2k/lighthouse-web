@@ -1,5 +1,5 @@
 Yet another Lightning network explorer, build with ReactJS
-For Demo, visit [https://lnlighthouse.online](https://lnlighthouse.online) (Tested only in Chrome & Firefox and Desktop is preferred to view)
+For Demo, visit [https://lnlighthouse.online](https://lnlighthouse.online) (Tested only in Chrome, Firefox, Safari and Desktop is preferred to view)
 
 # Screenshots
 
