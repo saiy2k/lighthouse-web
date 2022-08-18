@@ -1,23 +1,54 @@
-# Components
+Yet another Lightning network explorer, build with ReactJS
 
-App - Cleanup
+# Screenshots
+
+![Node of Andreas Antonopoulos](public/screen01.png)
+![Channel Info](public/screen02.png)
+![Node Info](public/screen03.png)
+
+To learn LN, we created this explorer.
+
+# How to use?
+- Peers are clustered by their node capactiy.
+- Click on Hexagonal peer to explore their peers
+- Longpress on root / LN nodes (hex) for additional info.
+
+# Source code
+[https://github.com/saiy2k/lighthouse-web](https://github.com/saiy2k/lighthouse-web)
+[https://github.com/saravanan7mani/lighthouse](https://github.com/saravanan7mani/lighthouse)
+
+# Reach us at
+[@saravananmani\_](https://twitter.com/saravananmani_), [@saiy2k](https://twitter.com/saiy2k)
+
+# To hire me
+- This app is my 'Proof of Work'
+- Looking to quit my fiat job and take a bitcoin job.
+- Contributed to [RTL Lightning node manager](https://github.com/Ride-The-Lightning/RTL/pulls?q=is%3Apr+author%3Asaiy2k)
+- Participant of Chaincode lab's Bitcoin Protocol Developmnet course.
+- To hire me, you can reach out to [saiy2k@gmail.com](mailto:saiy2k@gmail.com), [Linkedin](https://www.linkedin.com/in/saiy2k/), [Twitter](https://twitter.com/saiy2k)
+
+Credits
+Thunder sound fx: [Pixabay](https://pixabay.com/sound-effects/)
+
+# Components
+App
+  * AboutBox
   * StormCanvas
   * GraphController
     * LNCanvas
       * ClusterLayer
         * ClusterSegment
       * PeerLayer
-        * PeerHex
+        * PeerHex3
     * FilterModal
     * InfoBox
-  * AboutBox
+    * MobileWarning
   * Constants
-  * Breadcrumb
-  * HUD
-  * Utils
+  * Interface
   * useLongPress
+  * Utils
 
-Store
+# Store
   * slide
     * currentIndex: number
     * sortParams: string[]
@@ -37,48 +68,3 @@ Store
     * l2, l3, l4, l5
     * infoPeer
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

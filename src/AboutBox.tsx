@@ -71,7 +71,7 @@ function AboutBox({ onAboutClose }: { onAboutClose: Function }) {
                                 - This app is my 'Proof of Work' <br/>
                                 - Looking to quit my fiat job and take a bitcoin job. <br/>
                                 - Contributed to <Link href='https://github.com/Ride-The-Lightning/RTL/pulls?q=is%3Apr+author%3Asaiy2k'> RTL Lightning node manager </Link> <br/>
-                                - Participant of Chaincode lab's Bitcoin Protocol Developmnet course.
+                                - Participant of Chaincode lab's Bitcoin Protocol Developmnet course. <br/>
                                 - To hire me, you can reach out to  <Link href='mailto:saiy2k@gmail.com'>saiy2k@gmail.com</Link>, <Link href='https://www.linkedin.com/in/saiy2k/'> Linkedin</Link>, <Link href='https://twitter.com/saiy2k'> Twitter </Link>
                             </p>
 
