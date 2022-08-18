@@ -1,0 +1,55 @@
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bs-body-font-family: 'Open Sans', sans-serif;
+  --bs-body-font-size: 12px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+@media (min-width: 640px) {
+    .w-90 {
+        width: 100%;
+    }
+}
+
+.animTransform {
+    transition: transform 5s
+}
+
+.animTransform1s {
+    transition: transform 1s
+}
+
+.animTransformHalf {
+    transition: transform 0.5s
+}
+
+.animTransformQuarter {
+    transition: transform 0.25s
+}
+
+.animOpacity {
+    transition: opacity 1s
+}
+
+.animOpacityHalf {
+    transition: opacity 0.5s
+}
+
+.animPeerHalf {
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

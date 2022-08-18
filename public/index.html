@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#09091E" />
+    <meta name="description" content="Yet another lightning network explorer"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title> Lighthouse - Lightning network explorer </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1NLXGPCGG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B1NLXGPCGG');
+    </script>
+  </head>
+  <!--
+  <body class="text-center text-white d-flex h-100" style="background: radial-gradient(circle at 25%, rgb(43,9,50) 12%, rgb(8,9,29) 75%)">
+  -->
+  <body class="text-center text-white d-flex h-100" style="background: #09091E">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container mx-auto d-flex w-100 h-100 flex-column" id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <audio id="aud1">
+        <source src="./thunder1.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="aud2">
+        <source src="./thunder2.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="aud3">
+        <source src="./thunder3.mp3" type="audio/mp3">
+    </audio>
+
+
+  </body>
+</html>
