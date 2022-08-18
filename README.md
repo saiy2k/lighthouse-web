@@ -1,4 +1,5 @@
 Yet another Lightning network explorer, build with ReactJS
+For Demo, visit [https://lnlighthouse.online](https://lnlighthouse.online) (Tested only in Chrome & Firefox and Desktop is preferred to view)
 
 # Screenshots
 
@@ -14,8 +15,8 @@ To learn LN, we created this explorer.
 - Longpress on root / LN nodes (hex) for additional info.
 
 # Source code
-[https://github.com/saiy2k/lighthouse-web](https://github.com/saiy2k/lighthouse-web)
-[https://github.com/saravanan7mani/lighthouse](https://github.com/saravanan7mani/lighthouse)
+- [https://github.com/saiy2k/lighthouse-web](https://github.com/saiy2k/lighthouse-web)
+- [https://github.com/saravanan7mani/lighthouse](https://github.com/saravanan7mani/lighthouse)
 
 # Reach us at
 [@saravananmani\_](https://twitter.com/saravananmani_), [@saiy2k](https://twitter.com/saiy2k)
