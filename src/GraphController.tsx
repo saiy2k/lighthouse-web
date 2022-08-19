@@ -185,7 +185,7 @@ function GraphController() {
             viewBox={vbString}
             ref={svgRef} 
             id='renderBox'
-            style={{ 'width': '100%', 'height': `${svgH}%`, 'transition': 'transform 1s, viewBox 1s', 'position': 'absolute', 'left': '0px', 'overflow': 'hidden', 'background': 'radial-gradient(circle at 30% 40%, rgb(43,10,50) 12%, rgb(8,9,29) 75%)' }}
+            style={{ 'width': '100%', 'height': `${svgH}%`, 'transition': 'transform 1s, viewBox 1s', 'position': 'absolute', 'left': '0px', 'overflow': 'hidden', 'background': 'radial-gradient(circle at 30% 40%, rgb(7,35,45) 12%, rgb(8,9,29) 75%)' }}
             onPointerDown={(e: any) => onPointerDown(e) }
             onPointerUp={(e: any) => onPointerUp(e) }
             onPointerLeave={(e: any) => onPointerUp(e) }

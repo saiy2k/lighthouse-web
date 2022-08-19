@@ -77,7 +77,8 @@ function AboutBox({ onAboutClose }: { onAboutClose: Function }) {
 
                             <b> Credits </b>
                             <p>
-                                Thunder sound fx: <Link href='https://pixabay.com/sound-effects/' target='_blank'> Pixabay</Link>
+                                Thunder sound fx: <Link href='https://pixabay.com/sound-effects/' target='_blank'> Pixabay</Link> <br/>
+                                Thunder loader anim: <Link href='https://lottiefiles.com/103545-thunder-bolt'> Lottie files </Link>
                             </p>
                             <p className='text-center'> Hail Satoshi! </p>
                         </div>

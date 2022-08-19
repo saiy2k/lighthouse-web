@@ -604,7 +604,7 @@ export const fetchNode = createAsyncThunk('fetchNodes',
             const apiRawResp    =   await fetch(serviceBase, {
                 method          :   "POST",
                 headers         :   { 'Content-Type': 'application/json' },
-                body            :   JSON.stringify({ "public_keys": pubkey })
+                body            :   JSON.stringify({ "public_keys": [pubkey] })
             });
             const data          =   await apiRawResp.json();
 
