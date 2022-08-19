@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { ILNNode } from '../Interface';
+import { createSlice        }   from    '@reduxjs/toolkit';
+import { ILNNode            }   from    '../Interface';
 
 export interface UIState {
     hoverNode                   :   ILNNode | null;
@@ -8,6 +8,7 @@ export interface UIState {
     l4                          :   ILNNode | null;
     l5                          :   ILNNode | null;
     infoPeer                    :   ILNNode | null;
+    isMute                      :   boolean;
 }
 
 const initialState: UIState = {
@@ -17,6 +18,7 @@ const initialState: UIState = {
     l4                          :   null,
     l5                          :   null,
     infoPeer                    :   null,
+    isMute                      :   false
 };
 export const uiSlice = createSlice({
 
@@ -67,6 +69,16 @@ export const uiSlice = createSlice({
                 infoPeer: action.payload
             };
         },
+
+        toggleMute: (state: UIState) => {
+            // TODO: Big NO NO! To be fixed!
+            (window as any).ln.isMute = !state.isMute;
+
+            return {
+                ...state,
+                isMute: !state.isMute,
+            };
+        },
     },
 
 });
@@ -78,6 +90,7 @@ export const {
     updateL4,
     updateL5,
     updateInfoPeer,
+    toggleMute,
 } = uiSlice.actions;
 
 export default uiSlice.reducer;

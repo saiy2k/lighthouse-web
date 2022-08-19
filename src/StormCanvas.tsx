@@ -1,6 +1,9 @@
 import { useEffect          }   from    'react';
 import { THUNDER_FREQUENCY  }   from    './Constants';
 
+import { RootState          }   from    './store';
+import { useAppSelector     }   from    './store/hooks';
+
 let firstRun = false;
 
 /**
@@ -8,7 +11,9 @@ let firstRun = false;
  */
 function StormCanvas() {
 
+
     useEffect(() => {
+
 
         if (!firstRun) {
             firstRun = true;
@@ -16,7 +21,7 @@ function StormCanvas() {
             return;
         }
 
-        console.time('bolt');
+        // console.time('bolt');
 
         // The main canvas and context.
         let boltFadeDuration: number
@@ -90,10 +95,16 @@ function StormCanvas() {
 
         // Launch a bolt!!!
         launchBolt = function(x: number, y: number, length: number, direction: number) {
+
             lastBoltTime = new Date().getTime();
-            console.timeLog('bolt');
-            const thunderIndex = Math.ceil(Math.random() * 3);
-            (document.getElementById('aud' + thunderIndex) as HTMLAudioElement).play();
+            // console.timeLog('bolt');
+
+            //const isMute: boolean       =   useAppSelector((state: RootState) => state.ui.isMute);
+            if (!(window as any).ln.isMute) {
+                const thunderIndex = Math.ceil(Math.random() * 3);
+                (document.getElementById('aud' + thunderIndex) as HTMLAudioElement).play();
+            }
+
             var boltCanvas, boltContext;
             // Set the flash opacity.
             flashOpacity = 0.15 + Math.random() * 0.2;

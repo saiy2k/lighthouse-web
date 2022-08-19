@@ -1,3 +1,4 @@
+import React from 'react';
 import { 
     useEffect, 
     useState                }   from    'react';
@@ -128,6 +129,7 @@ function ClusterLayer({ root, show }: { root: ILNNode, show: boolean }) {
      */
     return (
         <g>
+            <ErrorBoundary>
 
         <g> {
             root.children.map((n1: ILNNode, i1: number) => 
@@ -195,9 +197,29 @@ function ClusterLayer({ root, show }: { root: ILNNode, show: boolean }) {
 
         } </g>: null } 
 
+        </ErrorBoundary>
 
         </g>
     );
 };
 
 export default ClusterLayer;
+
+class ErrorBoundary extends React.Component {
+    constructor(props: any) {
+        super(props);
+    }
+
+    static getDerivedStateFromError(_error: any) {
+        return { hasError: true };
+    }
+
+    componentDidCatch(_error: any, _errorInfo: any) {
+        // You can also log the error to an error reporting service
+        // logErrorToMyService(error, errorInfo);
+    }
+
+    render() {
+        return (this.props as any).children; 
+    }
+}
