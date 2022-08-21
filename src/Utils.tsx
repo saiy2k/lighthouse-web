@@ -211,7 +211,11 @@ export function formatSats(sats: number = 0, decimal: boolean = true): string {
 
 export function formatDate(date: Date) {
     const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    return `${month[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+    let hours = date.getHours().toString();
+    hours = hours.length === 1 ? '0' + hours : hours;
+    let mins = date.getMinutes().toString();
+    mins = mins.length === 1 ? '0' + mins : mins;
+    return `${month[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()} ${hours}:${mins}`;
 }
 
 // https://stackoverflow.com/a/18473154/390150
