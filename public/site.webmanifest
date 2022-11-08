@@ -13,6 +13,7 @@
             "type": "image/png"
         }
     ],
+    "description":"Yet another cool lightning network explorer",
     "theme_color": "#09091E",
     "background_color": "#09091E",
     "display": "standalone"
